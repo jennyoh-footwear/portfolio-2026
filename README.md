@@ -1,1 +1,1 @@
-# jennyoh-footwear2026.github.com
+# jennyoh-footwear2026.github.io
