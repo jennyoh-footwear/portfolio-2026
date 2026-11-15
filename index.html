@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Jenny Oh (오정은) | Footwear Designer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Noto+Sans+KR:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#E8EBEF; --surface:#F6F7F9; --ink:#14182B; --muted:#5A6073; --accent:#2B3FE0; --line:#14182B;
+  --head:"Bricolage Grotesque","Noto Sans KR",system-ui,sans-serif;
+  --body:"Noto Sans KR",system-ui,-apple-system,"Segoe UI",sans-serif;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){--bg:#10131F;--surface:#181C2C;--ink:#E8EBEF;--muted:#9AA1B5;--accent:#7C8CFF;--line:#E8EBEF}
+}
+:root[data-theme="dark"]{--bg:#10131F;--surface:#181C2C;--ink:#E8EBEF;--muted:#9AA1B5;--accent:#7C8CFF;--line:#E8EBEF}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);line-height:1.7;font-size:17px}
+a{color:inherit}
+a:focus-visible,input:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+header.nav{display:flex;justify-content:space-between;align-items:center;padding:24px 0;font-family:var(--head);font-weight:500}
+header.nav nav{display:flex;gap:24px}
+header.nav a{text-decoration:none}
+header.nav a:hover{color:var(--accent)}
+.hero{padding:72px 0 64px}
+.hero h1{font-family:var(--head);font-weight:700;font-size:clamp(46px,9.5vw,112px);line-height:.98;letter-spacing:-.03em;margin:0}
+.stitch{height:0;border-top:3px dashed var(--accent);width:100%;margin:36px 0 28px;clip-path:inset(0 100% 0 0);animation:sew 1.6s .2s ease-out forwards}
+@keyframes sew{to{clip-path:inset(0 0 0 0)}}
+@media (prefers-reduced-motion:reduce){.stitch{animation:none;clip-path:none}}
+.hero p{max-width:34em;font-size:clamp(18px,2.2vw,22px);margin:0;color:var(--muted)}
+section{padding:64px 0;border-top:1.5px dashed var(--line)}
+h2{font-family:var(--head);font-size:clamp(28px,4vw,40px);letter-spacing:-.02em;margin:0 0 32px;line-height:1.15}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:28px}
+.project{background:var(--surface);border-radius:4px;overflow:hidden;text-decoration:none;display:block}
+.project .img{aspect-ratio:4/3;display:grid;place-items:center;color:var(--muted);font-size:14px;background:repeating-linear-gradient(135deg,transparent 0 14px,rgba(127,134,160,.14) 14px 15px)}
+.project .txt{padding:18px 20px 22px}
+.project h3{font-family:var(--head);margin:0 0 4px;font-size:21px;line-height:1.25}
+.project p{margin:0;color:var(--muted);font-size:15px}
+.project:hover h3{color:var(--accent)}
+.lock{background:var(--surface);border:2px dashed var(--accent);border-radius:4px;padding:28px 24px;display:flex;flex-direction:column;justify-content:center;gap:12px}
+.lock h3{font-family:var(--head);margin:0;font-size:21px;line-height:1.25}
+.lock p{margin:0;color:var(--muted);font-size:15px}
+.lock .row{display:flex;gap:8px;flex-wrap:wrap}
+.lock input{flex:1 1 150px;min-width:0;padding:10px 14px;font:inherit;border:1.5px solid var(--line);border-radius:4px;background:var(--bg);color:var(--ink)}
+.lock button{padding:10px 18px;font:inherit;font-weight:500;border:0;border-radius:4px;background:var(--accent);color:#fff;cursor:pointer}
+.lock .msg{min-height:1.5em;font-size:14px;color:var(--accent)}
+.two{display:grid;grid-template-columns:1fr 1.4fr;gap:48px}
+@media (max-width:760px){.two{grid-template-columns:1fr;gap:20px}}
+.job{padding:0 0 22px;margin:0 0 22px;border-bottom:1px solid rgba(127,134,160,.35)}
+.job:last-child{border:0;margin:0;padding:0}
+.job h3{font-family:var(--head);font-size:20px;margin:0}
+.job .when{color:var(--muted);font-size:15px;margin:0 0 6px}
+.job p{margin:0}
+.tags{display:flex;flex-wrap:wrap;gap:10px;padding:0;margin:0;list-style:none}
+.tags li{background:var(--surface);padding:6px 14px;border-radius:99px;font-size:15px}
+.contact a.big{font-family:var(--head);font-weight:700;font-size:clamp(26px,5vw,52px);letter-spacing:-.02em;text-decoration:none;color:var(--accent);word-break:break-all}
+.contact a.big:hover{text-decoration:underline}
+footer{padding:36px 0 48px;color:var(--muted);font-size:14px}
+noscript{display:block;padding:16px 0;color:var(--muted)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="nav">
+    <span>Jenny Oh (오정은)</span>
+    <nav><a href="#work">Work</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+  </header>
+
+  <main>
+    <div class="hero">
+      <h1>Footwear designer.</h1>
+      <div class="stitch" aria-hidden="true"></div>
+      <p>I design shoes from first sketch to factory sample, with a focus on materials, hardware and Asian market trends.</p>
+    </div>
+
+    <section id="work">
+      <h2>Selected work</h2>
+      <div class="grid">
+        <a class="project" href="#"><div class="img">Add photo here</div><div class="txt"><h3>Project name 1</h3><p>Season, brand or school project, your role</p></div></a>
+        <a class="project" href="#"><div class="img">Add photo here</div><div class="txt"><h3>Project name 2</h3><p>Season, brand or school project, your role</p></div></a>
+        <div class="lock" id="lock">
+          <h3>See the full portfolio</h3>
+          <p>More projects, process and details are private. Enter the password I sent you.</p>
+          <div class="row">
+            <input id="pw" type="password" placeholder="Password" autocomplete="off" aria-label="Password">
+            <button id="go" type="button">Unlock</button>
+          </div>
+          <div class="msg" id="msg" role="status"></div>
+          <p><a href="mailto:your-email@example.com?subject=Portfolio%20password%20request">Request the password</a></p>
+        </div>
+      </div>
+      <noscript>Turn on JavaScript to unlock the full portfolio.</noscript>
+    </section>
+
+    <div id="vault"></div>
+
+    <section id="about">
+      <div class="two">
+        <h2>About</h2>
+        <div>
+          <p>I’m a footwear designer based in Korea with about four and a half years of experience across luxury and high street. I work in English and Korean, and I’m comfortable moving between the design studio, the factory floor and the retail shop.</p>
+          <div class="job" style="margin-top:28px">
+            <h3>Jimmy Choo</h3>
+            <p class="when">London</p>
+            <p>Junior Designer. Add one line about what you designed or delivered here.</p>
+          </div>
+          <div class="job">
+            <h3>Burberry</h3>
+            <p class="when">London</p>
+            <p>Add your role and one line about your work here.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Let’s talk</h2>
+      <a class="big" href="mailto:your-email@example.com">your-email@example.com</a>
+    </section>
+  </main>
+
+  <footer>© 2026 Jenny Oh (오정은)</footer>
+</div>
+<script>
+const VAULT = {"salt":"w713P2ngyj+x/uSuDFibIw==","iv":"efQ5g18JjGKHchde","iter":250000,"data":"DMKazgjRLgF+L812/HvSO3+N2IYWeQ5ufjUl5E5CvARRWBwK4nhfkiEZRj/q3MlcJ9ZMzRyhVc4RROgJRvFSI8Ws5Z36eD1z+PQAV3SHPPQGg7vmnU1OdiujoGj7b2SNZ1rMiqgZ8WaMIXv3951Kz6vn9wH8myd+WWHgX+LN0E30wfRrjF5PoA4gGWwMYgtEEPS/dqR+/H/naL89mvz7mzKogR1LIvbBpK2gxcOhue9xraBAfxdO3JA8Zs/y6HZ3RASQp0GFTHWiq2TYwz3FBnRhWKzSwrwhFoyR7ZvmvkAvHBEuJuOGM6kYkbSH7noSmx48gAUi4jmCamy9zOVbdl03j1xZ5xHK7HvVBA3gDkKnrsOFkq0Gg9ObVq78EZDB4N+mrbydj2PlRS71OcaQcjBSf+1Oy61PHfhRdk6+uRn9+HxKduYJ29corN3QGe20/LKhROisOSqrpBIONW+WpoZHWWR92xoyvU3JJ55WLgxjLHgkuzowew7iHj26YQ30I+PK9FJKQJnV8mO+/guPAkFRl9OVziq+RWD6+R5hx8Xk4kOXVFEGvMs/WOeSje+/iG3HzF4oGV56W+zuiJahAu4FADVWg+19aWF9KzvVMQ6sN9yBmRAHKHWhQyKI51g0TlK8ihq8tVFv5n5atnMEQaXTWTG46BZEfPgeY22UW4d9FjyWMSi1RL/QgW3biGXEqF72cb6Gp5LC0QwI36NU9+uzq/T8jVpWF6MVkI2z3Ytt1Bw1lm+NVljYREpK91Fj5lZhG1OtJzXS14K1LmScO+/oHhogggQ1VV5YFVNWUIWFk6zU1iyIb6We4PiU+d/v634rVusxqTvrx6sW3pV7iBSfodINpHZb7TMi7ZBLrwH4jd8MIP/UQg4hrWooWveMdGnJ83ne5C2GGCyeqYVf7h7DsRWwmmPw6UR+svmwSufA0lc6jprgOaK6RL6XQlqUGQCwNKTAZtiJefHUEJQvjOfUqPYSAby0ePVwueCwpV13V5peDSUZHZi5t9i0Czd2HN/RCHqx/b3hOAATJiy570Q2Q2ZsPOwLdzMZ58ObF6SX6X05+6I6yxE0d3r9viP4OJhKa4mKgesDcUwOvtPSuvtru7r2e7fSQdLDqZNSXT6XYPCBfzKYlW/DU7cLr7Fe7hyyCq0KY0PqDt/lEDEigZqvelppBXk8/09VJ/cGtVe4obODn51jdIpcNUNNCjnXz9xW6ZvFJSkm0w8jZYsoIippN7Q+VVk2B7ZrDhsRNxWGaCn7NqO6USFc4uGwEvdp23uvy4w2eVNwWnNq/o6NExyVDPTLAr1jvHikJrAO3p2u/kavx1+D7VhIVibbd1m6y6RStXauOsBXKioI6IANh1lbwS29pIwfMYrSg6ojwzdvDoVH5Ti0zVjwtemGAE+BPXG7Xy+gAAaSlffMwiWzXA1ErRYPDubF87QtuaX4h4Qawg=="};
+const b64 = s => Uint8Array.from(atob(s), c => c.charCodeAt(0));
+const msg = document.getElementById("msg");
+async function unlock(){
+  const pw = document.getElementById("pw").value;
+  if(!pw){ msg.textContent = "Enter the password."; return; }
+  msg.textContent = "Checking...";
+  try{
+    const base = await crypto.subtle.importKey("raw", new TextEncoder().encode(pw), "PBKDF2", false, ["deriveKey"]);
+    const key = await crypto.subtle.deriveKey({name:"PBKDF2", salt:b64(VAULT.salt), iterations:VAULT.iter, hash:"SHA-256"}, base, {name:"AES-GCM", length:256}, false, ["decrypt"]);
+    const plain = await crypto.subtle.decrypt({name:"AES-GCM", iv:b64(VAULT.iv)}, key, b64(VAULT.data));
+    document.getElementById("vault").innerHTML = new TextDecoder().decode(plain);
+    document.getElementById("lock").style.display = "none";
+    document.getElementById("vault").scrollIntoView({behavior:"smooth"});
+  }catch(e){
+    msg.textContent = "That password didn’t work. Try again.";
+  }
+}
+document.getElementById("go").addEventListener("click", unlock);
+document.getElementById("pw").addEventListener("keydown", e => { if(e.key === "Enter") unlock(); });
+</script>
+</body>
+</html>
